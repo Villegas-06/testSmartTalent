@@ -10,6 +10,11 @@
   justify-content: center;
 }
 
+#NavbarMain > ul#Logo > li a {
+  text-decoration: none;
+  color: white;
+}
+
 #NavbarMain > ul#Links {
   width: 50%;
   list-style-type: none;
@@ -22,7 +27,7 @@
   margin-right: 20px;
 }
 
-#NavbarMain > ul > li a {
+#NavbarMain > ul#Links > li a {
   text-decoration: none;
   color: white;
 }
