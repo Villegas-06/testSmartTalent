@@ -1,9 +1,9 @@
-#LoginContainer {
+#RegistroContainer {
   position: relative;
   height: 100vh;
 }
 
-#FormularioLogin {
+#FormularioRegistro {
   border: 1px solid #ccc;
   padding: 30px;
   position: absolute;
@@ -13,20 +13,11 @@
   width: 20%;
 }
 
-#FormularioLogin > input {
+#FormularioRegistro > input {
   margin-top: 20px;
   width: 100%;
 }
 
-#FormularioLogin > button {
+#FormularioRegistro > button {
   margin-top: 20px;
-}
-
-.RegisterLink {
-  margin-top: 20px;
-}
-
-.RegisterLink a {
-  text-decoration: none;
-  color: black;
 }
