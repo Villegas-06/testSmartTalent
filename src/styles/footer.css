@@ -1,0 +1,9 @@
+#Footer {
+  /*Set element in bottom*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #dbdbdb;
+  padding: 10px;
+  text-align: center;
+}
