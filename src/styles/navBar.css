@@ -1,0 +1,28 @@
+#NavbarMain {
+  display: flex;
+  margin-top: 10px;
+}
+
+#NavbarMain > ul#Logo {
+  width: 30%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+#NavbarMain > ul#Links {
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#NavbarMain > ul > li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+#NavbarMain > ul > li a {
+  text-decoration: none;
+  color: white;
+}
