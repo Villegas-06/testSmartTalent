@@ -1,0 +1,17 @@
+.HomeContainer {
+  margin-top: 20px;
+}
+
+#NuevoHotel {
+  display: flex;
+  flex-direction: column;
+}
+
+form#NuevoHotel > input:not(:first-child),
+label {
+  margin-top: 20px;
+}
+
+form#NuevoHotel > label > input:last-child {
+  margin-left: 5px;
+}

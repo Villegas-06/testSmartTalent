@@ -20,8 +20,8 @@ function App() {
           <Route path="/registro" element={<Registro />} />
           <Route path="/home" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }
