@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
+import { signUp } from "../components/firebaseAtuh"; // Asegúrate de que la importación sea correcta
 import "../styles/register.css";
 
 function Registro() {
+  const navigate = useNavigate();
+
   const [numeroDocumento, setNumeroDocumento] = useState("");
   const [nombreCompleto, setNombreCompleto] = useState("");
   const [email, setEmail] = useState("");
@@ -12,25 +14,12 @@ function Registro() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await axios
-      .post("http://localhost:5000/api/users", {
-        numero_documento: numeroDocumento,
-        nombre_completo: nombreCompleto,
-        email: email,
-        password: password,
-      })
-      .then((response) => {
-        console.log(response.data); // Mensaje de éxito desde el servidor
+    try {
+      // Llama a la función de registro con Firebase
+      await signUp(email, password);
 
-        // Limpia los campos del formulario después de la inserción
-        setNumeroDocumento("");
-        setNombreCompleto("");
-        setEmail("");
-        setPassword("");
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+      navigate("/login");
+    } catch (error) {}
   };
 
   return (
